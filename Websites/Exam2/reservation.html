@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    
+    <link rel="icon" href="images/homeicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Crafty+Girls&family=Delius+Swash+Caps&family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="headerimage" src="images/ClearHappyTails.gif" alt="Logo">
+        <h1>Happy Tails Boarding</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home Page</a> <a href="reservation.html">Make a Reservation</a> <a href="moreimages.html">More Pictures!</a>
+    </nav>
+    <br>
+    <section id="container">
+        <h2 class="center">Make a Reservation!</h2>
+
+        <form action="thankyou.html">
+            <label for="fname">First Name:</label>
+            <input type="text" required name="firstname"> <br>
+    
+            <label for="lname">Last Name:</label>
+            <input type="text" required name="lastname"> <br>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" required name="email"> <br>
+    
+            <label for="petname">Pet's Name:</label>
+            <input type="text" required name="petname"> <br> <br>
+    
+            <label for="date">Select a date the pet will arrive:</label>
+            <input type="date" reuired name="date" value="date" required><br>
+    
+            <label for="date">Select a date the pet will leave:</label>
+            <input type="date" reuired name="date" value="date" required><br>
+    
+            <br>
+            <fieldset>
+                <legend>What kind of animal is your pet?</legend>
+                <label><input type="radio" name="pet" value="dog"> Dog</label>
+                <label><input type="radio" name="pet" value="cat"> Cat</label>
+                <label><input type="radio" name="pet" value="bird"> Bird</label>
+                <label><input type="radio" name="pet" value="lizard"> Lizard</label>
+                <label><input type="radio" name="pet" value="Fish"> Fish</label>
+            </fieldset>
+            <br>
+    
+            <label for="comments">Any additonal comments?</label> <br>
+            <textarea name="comments" id="comments"></textarea>
+    
+            <br><input class="button" type="submit" value="Submit Form">
+        </form>
+    </section>
+    
+</body>
+</html>

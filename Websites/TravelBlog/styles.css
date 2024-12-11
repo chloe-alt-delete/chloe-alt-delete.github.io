@@ -1,0 +1,476 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Colors */
+    --gray-green: #1f2217;
+    --leaf: #748d4b;
+    --sandy-peach: #f1e3db;
+    --rooftop-red: #ae5936;
+
+    /* Sizes */
+    --img-height: 137px;
+    --img-width: 275px;
+
+    /* Font */
+    --font: "Delius Swash Caps", cursive;
+}
+
+
+
+
+
+
+
+
+/* Header */
+.header {
+    font-family: "Ephesis", cursive;
+    text-align: center;
+    padding: 5px;
+    border-inline: 250px var(--leaf) solid;
+    border-top: 5px var(--leaf) solid;
+    border-bottom: 5px var(--leaf) solid;
+    margin: auto;
+    width: 50%;
+    background-color: var(--sandy-peach);
+    font-size: 1.4em;
+}
+
+.left,
+.right {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    z-index: 15;
+}
+
+.right {
+    right: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* Navigation */
+nav {
+    text-align: center;
+    background-color: var(--gray-green);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+nav a {
+    padding: 15px;
+    padding-inline: 30px;
+    margin-inline: 60px;
+    display: inline-block
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--leaf);
+}
+
+
+
+
+
+
+
+/* Main Body */
+body {
+    font-size: 1.3rem;
+    font-family: var(--font);
+    background-color: var(--gray-green);
+}
+
+p {
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    font-family: "Ephesis", cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+.bigfont {
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Home & Destinations */
+#home,
+#destinations,
+#gallery,
+#contact,
+.container {
+    text-align: center;
+    padding: 15px 35px 15px 35px;
+    margin: auto;
+    width: 75%;
+    background-color: var(--sandy-peach);
+
+    border-inline: 25px var(--leaf) solid;
+    border-top: 5px var(--leaf) solid;
+    border-bottom: 5px var(--leaf) solid;
+
+    position: relative;
+}
+
+
+
+
+
+
+
+/* Callout Box */
+#callout-box {
+    position: absolute;
+    bottom: -27px;
+    right: -25px;
+    z-index: 5;
+
+    background: var(--sandy-peach);
+    border: 3px var(--rooftop-red) solid;
+    border-radius: 5px;
+
+    padding: 3px;
+    width: auto;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* Gallery */
+.col1text,
+.col2text,
+.col3text {
+    width: 30%;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.col1,
+.col2,
+.col3 {
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+
+    display: inline-block;
+    height: var(--img-height);
+    width: var(--img-width);
+    border: 3px var(--rooftop-red) solid;
+
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--gray-green);
+    color: white;
+    text-align: center;
+    padding: 25px 0px 20px 0px;
+    font-size: 1rem;
+}
+
+.cr {
+    text-align: center;
+    color: var(--sandy-peach);
+    padding: 20px 0px 10px 0px;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form */
+label,
+input {
+    display: flex;
+    display: inline-block;
+    flex-flow: column;
+}
+
+#align {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+
+    width: 60%;
+    margin: auto;
+    border: 6px var(--rooftop-red) double;
+    background-color: rgba(116, 141, 75, 0.2);
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.text {
+    width: 390px;
+}
+
+input,
+select {
+    font-family: var(--font);
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    border: 2px var(--leaf) solid;
+    border-radius: 4px;
+}
+
+input:hover,
+textarea:hover,
+select:hover, .button:hover {
+    border: 3px var(--gray-green) solid;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 3px var(--rooftop-red) solid;
+    display: block;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px var(--leaf) solid;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    resize: none;
+}
+
+
+
+
+
+
+
+/* Buttons */
+
+.button {
+    width: 80%;
+    margin-top: 40px;
+    background-color: var(--rooftop-red);
+    font-family: "Delius Swash Caps", cursive;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+
+
+
+
+/* DISCLAIMER: */
+/* W3SCHOOLS DID MOST OF THIS NEXT PART */
+/* I had no idea how to style forms and now I do (kinda) */
+
+
+
+
+
+/* W3Schools help with my checkmarks */
+.checks {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checks input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+/* On mouse-over, add the website's background color */
+.checks:hover input~.checkmark {
+    background-color: var(--gray-green);
+}
+
+/* When the checkbox is checked, add a green background */
+.checks input:checked~.checkmark {
+    background-color: var(--leaf);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    /* I guess the content tag is like a string? */
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checks input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checks .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--gray-green);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* W3Schools help with Radio Buttons */
+.radios {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radios input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radiocheck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radios:hover input~.radiocheck {
+    background-color: var(--gray-green);
+}
+
+/* When the radio button is checked, add a blue background */
+.radios input:checked~.radiocheck {
+    background-color: var(--leaf);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiocheck:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radios input:checked~.radiocheck:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radios .radiocheck:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gray-green);
+}

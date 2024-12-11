@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Ephesis&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Delius+Swash+Caps&family=Ephesis&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f3f42d6f06.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="Images/waffleicon.png">
+    <title>World Wide Waffle</title>
+</head>
+<body>
+    <header>
+        <img class="left" src="Images/LeafLeft.png" alt="Left Leaf">
+        <div class="header">
+            <h1>World Wide Waffle</h1>
+            <h2>Waffle Travels to Italy</h2>
+        </div>
+        <img class="right" src="Images/LeafRight.png" alt="Right Leaf">
+    </header>
+    <nav>
+        <a href="#home">Home</a> <a href="#destinations">Destinations</a> <a href="#gallery">Gallery</a> <a href="#contact">Contact Me</a>
+    </nav>
+    <section id="container">
+        <div id="home">
+            <h3 class="bigfont">Home</h3>
+            <p>Traveling to Italy has arguably been one of the best places that I've ever been to. The food, the atmosphere, and all the culture there is definietly lives up to it's name. During my travels, I got to explore many places with ancient history tied with them. I've even been to the ancient civilization destroyed to ash, Pompeii. Personally, I would go again. I had a really great time there and it was fun to walk around and see the sights.</p>
+            <p id="callout-box"><b>Tip! Always eat pizza with a fork and knife in Italy.</b></p>
+        </div>
+        <br>
+        <div id="destinations">
+            <h3 class="bigfont">Destinations</h3>
+            <br>
+            <h3>Rome</h3>
+            <p>Rome, the capital of Italy, has been around for over two millenia. There are many things to do in the city such as sight seeing, going to eat in nice restaurants, and guided tours. </p>
+            <br>
+            <h3>Pompeii</h3>
+            <p>The city of ash can still be explored today. If you're interested in the spooky side of it, ghost tours of the city are available! If that's not your style, then you can walk around and enjoy the sights that Pompeii has to offer.</p>
+            <br>
+            <h3>Almafi Coast</h3>
+            <p>The Almafi Coast is known for its quaint villages. There are a lot of things to do there. You can take a boat tour, go shopping, or even eat lemon sorbet out of a lemon the size of your head! They are the best. 10/10 would reccomend.</p>
+            <br>
+        </div>
+        <br>
+        <div id="gallery">
+            <h3 class="bigfont">Gallery</h3>
+
+            <h3 class="col1text">Rome</h3>
+            <h3 class="col2text">Pompeii</h3>
+            <h3 class="col3text">Almafi Coast</h3>
+
+            <img class="col1" src="Images/Rome.avif" alt="Rome">
+            <img class="col2" src="Images/Pompeii.jpg" alt="Pompeii">
+            <img class="col3" src="Images/AmalfiCoast.jpg" alt="Almafi Coast">
+            <img class="col1" src="Images/Rome2.jpg" alt="Rome 2">
+            <img class="col2" src="Images/Pompeii2.webp" alt="Pompeii 2">
+            <img class="col3" src="Images/LemonSorbet.jpg" alt="Lemon Sorbet">
+        </div>
+        <br>
+        <div id="contact">
+            <h3 class="bigfont">Contact</h3>
+            <p>To request an appointment, please fill out this form.</p>
+            <form action="thankyou.html">
+                <div id="align">
+                    <label class="textlabel" for="firstname">First Name: <input class="text" id="firstname" type="text" required name="firstname"></label>
+                    <label class="textlabel" for="lastname">Last Name: <input class="text" id="lastname" type="text" required name="lastname"></label>
+                    <label class="textlabel" for="email">Your Email: <input class="text" id="email" type="email" required name="email"></label>
+
+                    <br>
+
+                    <label for="date">Select a date you're available: <input type="date" id="date" required name="date"></label>
+                    <label for="time">Choose a time you're available: <select id="time" name="time" required>
+                        <option label="Choose Here"></option>
+                        <option value="morning">Morning</option>
+                        <option value="noon">Noon</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select></label>
+                    
+                </div>
+
+                <br>
+                <fieldset>
+                    <legend>Check off some cities you'd like to visit!</legend>
+                    <label class="checks">Rome
+                        <input type="checkbox" name="places" value="rome">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checks">Pompeii
+                        <input type="checkbox" name="places" value="pompeii">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checks">Naples
+                        <input type="checkbox" name="places" value="naples">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checks">Florence
+                        <input type="checkbox" name="places" value="florence">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checks">Venice
+                        <input type="checkbox" name="places" value="venice">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checks">Vatican City
+                        <input type="checkbox" name="places" value="vatican city">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>How did you find this website?</legend>
+                    <label class="radios">It was Good
+                        <input type="radio" name="decision" value="good">
+                        <span class="radiocheck"></span>
+                    </label>
+                    <label class="radios">It was Bad
+                        <input type="radio" name="decision" value="bad">
+                        <span class="radiocheck"></span>
+                    </label>
+                    <label class="radios">Prefer Not to Say
+                        <input type="radio" name="decision" value="idk">
+                        <span class="radiocheck"></span>
+                    </label>
+                </fieldset>
+                <br>
+
+                <label for="comments">Any additonal comments?</label> <br>
+                <textarea name="comments" id="comments"></textarea>
+
+                <br><input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Name: Chloe Butler</p>
+        <p>Phone: <a href="tel:+15739371067">(573)937-1067</a></p>
+        <p>Email: <a href="mail:cb0982306@otc.edu">cb0982306@otc.edu</a></p>
+        <p>Address: 1001 E Chestnut Expressway, Springfield, MO 65802</p>
+        <p class="cr"><i class="fa-regular fa-copyright"></i> Made by Chloe Butler</p>
+    </footer>
+</body>
+</html>

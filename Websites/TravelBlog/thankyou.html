@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Ephesis&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Delius+Swash+Caps&family=Ephesis&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="icon" href="Images/waffleicon.png">
+  <title>Thank You!</title>
+</head>
+
+<body>
+  <header>
+    <img class="left" src="Images/LeafLeft.png" alt="Left Leaf">
+    <div class="header">
+      <h1>World Wide Waffle</h1>
+      <h2>Waffle Travels to Italy</h2>
+    </div>
+    <img class="right" src="Images/LeafRight.png" alt="Right Leaf">
+  </header>
+  <br>
+  <section class="container">
+    <div>
+      <h3>Thank you for requesting an appointment! We will be in touch soon!</h3>
+    </div>
+    <br>
+    <div>
+      <script>
+        printQuery();
+      </script>
+      <br>
+      <a class="button" href="index.html">Back to Website</a>
+      <br> <br>
+    </div>
+  </section>
+</body> 
+
+</html>
